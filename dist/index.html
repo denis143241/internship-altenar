@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css//style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="header__content">
+                            <h3 class="header__title title">Социальные сети</h3>
+                            <p class="header__subtitle">Делитесь постами из соцсетей</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="header__button-block">
+                            <button class="header__button btn btn-primary"><i class="bi bi-plus-circle"></i>&nbsp;Добавить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__tabs">
+                    <div class="header__tab header__tab--active">Instagram</div>
+                    <div class="header__tab">Vkontakte</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="posts">
+                <div class="posts__header">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6 col-5">
+                            <div class="posts__title posts__title--medium">Пост</div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-3">
+                            <div class="posts__title posts__title--medium">Опубликовано</div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-4">
+                            <div class="posts__title posts__title--medium">Ссылка</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="posts__item">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6 col-5">
+                            <div class="posts__item-preview">
+                                <div class="posts__item-preview-block">
+                                    <img class="posts__img" src="./images/post-image.png" alt="picture"/>
+                                </div>
+                                <div class="posts__item-preview-block">
+                                    <h6 class="posts__title">Onion</h6>
+                                    <p class="posts__subtitle">@altenar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-3">
+                            <div class="posts__description">
+                                <h6 class="posts__title posts__title--status-success">altenar</h6>
+                                <p class="posts__subtitle">25/02/2022</p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-2">
+                            <div class="posts__icon-block">
+                                <button class="icon--link"></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-2">
+                            <div class="posts__icon-block">
+                                <button class="icon icon--more icon--default">
+                                    <div class="icon__select-block" data-select-more="false">
+                                        <div class="icon__select-content">
+                                            <div class="icon__select-item">Опубликовать</div>
+                                            <div class="icon__select-item">Удалить</div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="posts__item">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6 col-5">
+                            <div class="posts__item-preview">
+                                <div class="posts__item-preview-block">
+                                    <img class="posts__img" src="./images/post-image.png" alt="picture"/>
+                                </div>
+                                <div class="posts__item-preview-block">
+                                    <h6 class="posts__title">Onion</h6>
+                                    <p class="posts__subtitle">@altenar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-3">
+                            <div class="posts__description">
+                                <h6 class="posts__title posts__title--status-error">altenar</h6>
+                                <p class="posts__subtitle">25/02/2022</p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-2">
+                            <div class="posts__icon-block">
+                                <button class="icon--link"></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-2">
+                            <div class="posts__icon-block">
+                                <button class="icon icon--more icon--default">
+                                    <div class="icon__select-block" data-select-more="false">
+                                        <div class="icon__select-content">
+                                            <div class="icon__select-item">Опубликовать</div>
+                                            <div class="icon__select-item">Удалить</div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="posts__item">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6 col-5">
+                            <div class="posts__item-preview">
+                                <div class="posts__item-preview-block">
+                                    <img class="posts__img" src="./images/post-image.png" alt="picture"/>
+                                </div>
+                                <div class="posts__item-preview-block">
+                                    <h6 class="posts__title">Onion</h6>
+                                    <p class="posts__subtitle">@altenar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-3">
+                            <div class="posts__description">
+                                <h6 class="posts__title posts__title--status-waiting">altenar</h6>
+                                <p class="posts__subtitle">25/02/2022</p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-2">
+                            <div class="posts__icon-block">
+                                <button class="icon--link"></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-2">
+                            <div class="posts__icon-block">
+                                <button class="icon icon--more icon--default">
+                                    <div class="icon__select-block" data-select-more="false">
+                                        <div class="icon__select-content">
+                                            <div class="icon__select-item">Опубликовать</div>
+                                            <div class="icon__select-item">Удалить</div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="posts__item">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6 col-5">
+                            <div class="posts__item-preview">
+                                <div class="posts__item-preview-block">
+                                    <img class="posts__img" src="./images/post-image.png" alt="picture"/>
+                                </div>
+                                <div class="posts__item-preview-block">
+                                    <h6 class="posts__title">Onion</h6>
+                                    <p class="posts__subtitle">@altenar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-3">
+                            <div class="posts__description">
+                                <h6 class="posts__title posts__title--status-error">altenar</h6>
+                                <p class="posts__subtitle">25/02/2022</p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-2">
+                            <div class="posts__icon-block">
+                                <button class="icon--link"></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-2">
+                            <div class="posts__icon-block">
+                                <button class="icon icon--more icon--default">
+                                    <div class="icon__select-block" data-select-more="false">
+                                        <div class="icon__select-content">
+                                            <div class="icon__select-item">Опубликовать</div>
+                                            <div class="icon__select-item">Удалить</div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="posts__item">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6 col-5">
+                            <div class="posts__item-preview">
+                                <div class="posts__item-preview-block">
+                                    <img class="posts__img" src="./images/post-image.png" alt="picture"/>
+                                </div>
+                                <div class="posts__item-preview-block">
+                                    <h6 class="posts__title">Onion</h6>
+                                    <p class="posts__subtitle">@altenar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-3">
+                            <div class="posts__description">
+                                <h6 class="posts__title posts__title--status-success">altenar</h6>
+                                <p class="posts__subtitle">25/02/2022</p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-2">
+                            <div class="posts__icon-block">
+                                <button class="icon--link"></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-2">
+                            <div class="posts__icon-block">
+                                <button class="icon icon--more icon--default">
+                                    <div class="icon__select-block" data-select-more="false">
+                                        <div class="icon__select-content">
+                                            <div class="icon__select-item">Опубликовать</div>
+                                            <div class="icon__select-item">Удалить</div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="posts__item">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6 col-5">
+                            <div class="posts__item-preview">
+                                <div class="posts__item-preview-block">
+                                    <img class="posts__img" src="./images/post-image.png" alt="picture"/>
+                                </div>
+                                <div class="posts__item-preview-block">
+                                    <h6 class="posts__title">Onion</h6>
+                                    <p class="posts__subtitle">@altenar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-3">
+                            <div class="posts__description">
+                                <h6 class="posts__title posts__title--status-success">altenar</h6>
+                                <p class="posts__subtitle">25/02/2022</p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-2">
+                            <div class="posts__icon-block">
+                                <button class="icon--link"></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-2">
+                            <div class="posts__icon-block">
+                                <button class="icon icon--more icon--default">
+                                    <div class="icon__select-block" data-select-more="false">
+                                        <div class="icon__select-content">
+                                            <div class="icon__select-item">Опубликовать</div>
+                                            <div class="icon__select-item">Удалить</div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        const btnsMore = document.querySelectorAll('.icon--more');
+        const selectMoreAttribute = 'data-select-more'
+
+        const hideAllIcons = () => {
+            btnsMore.forEach(btn => {
+                let icon = btn.querySelector('.icon__select-block')
+                if (!icon || !icon.hasAttribute(selectMoreAttribute)) return
+                icon.setAttribute(selectMoreAttribute, changeVisible(btn, "false"))
+            })
+        }
+        const changeVisible = (btn, visible) => {
+            if (visible === "true") {
+                btn.classList.add('icon--active')
+                btn.classList.remove('icon--default')
+                return "true"
+            }
+            btn.classList.remove('icon--active')
+            btn.classList.add('icon--default')
+            return "false"
+        }
+        document.addEventListener('click', hideAllIcons)
+        
+        btnsMore.forEach(btn => {
+            const menuMore = btn.querySelector('.icon__select-block')
+            if (!menuMore || !menuMore.hasAttribute(selectMoreAttribute)) return
+            btn.addEventListener('click', (e) => {
+                const value = menuMore.getAttribute(selectMoreAttribute)
+                e.stopPropagation();
+                hideAllIcons()
+
+                menuMore.setAttribute(selectMoreAttribute, value === "true" ? changeVisible(btn, "false") : changeVisible(btn, "true"))
+            })
+        })
+    </script>
+</body>
+</html>
