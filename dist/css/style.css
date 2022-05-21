@@ -1,6 +1,8 @@
+body {
+  font-family: "Roboto", 'sans-serif';
+}
 .header {
   background-color: rgba(0, 0, 0, 0.04);
-  font-family: "Roboto", 'sans-serif';
 }
 .header__inner {
   padding-top: 60px;
