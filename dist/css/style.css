@@ -29,8 +29,14 @@ body {
   letter-spacing: 0.15px;
 }
 .header__tabs {
-  display: flex;
   margin-top: 32px;
+}
+.header__tabs-inner {
+  padding: 0;
+  display: flex;
+}
+.header__tabs-item {
+  list-style-type: none;
 }
 .header__tab {
   position: relative;
@@ -41,7 +47,8 @@ body {
   width: 164px;
   height: 48px;
   text-transform: uppercase;
-  cursor: default;
+  border: none;
+  background-color: transparent;
 }
 .header__tab--active {
   color: #2196F3;
@@ -67,7 +74,7 @@ body {
 .posts__title {
   position: relative;
   font-size: 14px;
-  margin: 0;
+  font-weight: 500;
 }
 .posts__title--medium {
   font-weight: 700;
@@ -172,9 +179,7 @@ body {
 .icon--active::after {
   opacity: 1;
 }
-.icon:active::after {
-  background-color: rgba(33, 150, 243, 0.24);
-}
+.icon:active::after,
 .icon--active::after {
   background-color: rgba(33, 150, 243, 0.24);
 }
