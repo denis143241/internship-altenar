@@ -16,25 +16,56 @@
     </head>
 <body>
     
-    <form class="form">
-        <input id="file-input" type="file" class="form__file-input" />
-        <div class="form__file-drop-zone">
-            <span class="form__file-img">
-                <svg width="31" height="38" viewBox="0 0 31 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M31 9.91846L21.3142 0.0049438V0.0043945H21.3137L21.3094 0L21.3049 0.0043945H3.14592C1.41116 0.0043945 0 1.42676 0 3.1748V34.6187C0 36.3667 1.41116 37.7896 3.14592 37.7896H27.8541C29.5884 37.7896 30.999 36.3667 30.999 34.6187V9.91943L31 9.91846ZM28.1812 9.88452L21.2919 9.80273L21.3077 2.84949L28.1812 9.88452ZM29.0148 34.6187C29.0148 35.2642 28.4945 35.7896 27.8541 35.7896H3.14592C2.5055 35.7896 1.98425 35.2642 1.98425 34.6187V3.1748C1.98425 2.5293 2.5055 2.00439 3.14592 2.00439H19.3261L19.3038 11.7793L29.0148 11.8945V34.6187Z" fill="black" fill-opacity="0.54"/>
-                </svg>
-            </span>
-            <div class="form__zone-description">
-                <div class="title title-small">Перетащите файл или 
-                    <label class="form__file-label" for="file-input">загрузите с компьютера</label>
+    <form class="form" role="form">
+        <div class="title title--medium">Создайте подборку</div>
+
+        <div class="form__subtitle subtitle">Перед началом ознакомьтесь с гайдлайнами, где вы найдете примеры правильного оформления</div>
+
+        <fieldset class="form__block">
+            <legend class="form__title">Расскажите о подборке</legend>
+            <p class="form__subtitle subtitle">Желательно сделать это кратко и ёмко</p>
+        </fieldset>
+
+        <div class="form__file file">
+            <input class="file__input visually-hidden" id="file-input" type="file" />
+            <div class="file__drop-zone">
+                <span class="file__cross">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.8525 0.5 0.5 3.8525 0.5 8C0.5 12.1475 3.8525 15.5 8 15.5C12.1475 15.5 15.5 12.1475 15.5 8C15.5 3.8525 12.1475 0.5 8 0.5ZM11.75 10.6925L10.6925 11.75L8 9.0575L5.3075 11.75L4.25 10.6925L6.9425 8L4.25 5.3075L5.3075 4.25L8 6.9425L10.6925 4.25L11.75 5.3075L9.0575 8L11.75 10.6925Z" fill="rgba(0, 0, 0, 0.23)"/>
+                    </svg>    
+                </span>
+                <img class="file__img" src="./images/file.svg" alt="">
+                <div class="file__zone-description">
+                    <div class="file__drop-zone-subtitle subtitle">Перетащите файл или 
+                        <label class="file__label" for="file-input">загрузите с компьютера</label>
+                    </div>
+                    <div class="subtitle subtitle--small">
+                        Соотношение 1:1. Минимальный размер 1242х1242 px
+                    </div>
                 </div>
-                <div class=form__description form__description--small">
-                    Соотношение 1:1. Минимальный размер 1242х1242 px
-                </div>
-            </div>
+            </div>  
         </div>
+
+        <fieldset class="form__block form__block--devider">
+            <legend class="form__title">Выберите цвет</legend>
+            <p class="form__subtitle subtitle">Лучше всего подойдет цвет преобладающий на обложке</p>
+            
+            <div class="form__color-picker color-picker">
+                <input class="color-picker__input visually-hidden" id="color-picker" type="color" />
+                <label class="color-picker__label" for="color-picker"></label>
+            </div>
+        </fieldset>
+        
     </form>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const colorPicker = document.querySelector("#color-picker");
+        const label = document.querySelector(".color-picker__label");
+  
+        colorPicker.addEventListener("input", () => {
+          label.style.background = colorPicker.value;
+        });
+    </script>
 </body>
 </html>
