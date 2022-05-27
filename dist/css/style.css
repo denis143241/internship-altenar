@@ -177,39 +177,6 @@ body {
 .icon.show::after {
   background-color: rgba(33, 150, 243, 0.24);
 }
-.icon__select-block[data-select-more] {
-  background-color: transparent;
-  z-index: 2;
-  width: 134px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: none;
-}
-.icon__select-block[data-select-more="false"] {
-  display: none;
-}
-.icon__select-block[data-select-more="true"] {
-  display: flex;
-}
-.icon__select-content {
-  margin-top: 38px;
-  padding: 8px 0;
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-  width: 100%;
-  background-color: #fff;
-}
-.icon__select-item {
-  height: 36px;
-  padding: 0 15px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-.icon__select-item:hover {
-  background-color: #f5f5f5;
-}
 .title {
   font-size: 36px;
   font-weight: 400;
