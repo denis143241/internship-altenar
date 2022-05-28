@@ -55,6 +55,20 @@
                 <label class="color-picker__label" for="color-picker"></label>
             </div>
         </fieldset>
+
+        <fieldset class="form__block form__block--devider">
+            <legend class="form__title">Проверьте читабельность</legend>
+            <p class="form__subtitle subtitle">Выберите цвет интерфейса, который будет контрастнее смотреться на выбранном ранее фоне</p>
+
+            <div class="theme-switcher">
+                <input class="theme-switcher__dark" type="radio" id="dark" name="theme" checked>
+                <label class="subtitle subtitle--small theme-switcher__label-dark" for="dark">Темный</label>
+                <input class="theme-switcher__light" type="radio" id="light" name="theme">
+                <label class="subtitle subtitle--small theme-switcher__label-light" for="light">Светлый</label>
+                <div class="theme-switcher__status"></div>
+                <div class="theme-switcher__wrapper"></div>
+            </div>
+        </fieldset>
         
     </form>
 
