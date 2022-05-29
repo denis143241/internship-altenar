@@ -11,66 +11,89 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="./css//style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Montserrat:wght@600&display=swap" rel="stylesheet">
         <title>Create post</title>
     </head>
 <body>
-    
-    <form class="form" role="form">
-        <div class="title title--medium">Создайте подборку</div>
 
-        <div class="form__subtitle subtitle">Перед началом ознакомьтесь с гайдлайнами, где вы найдете примеры правильного оформления</div>
-
-        <fieldset class="form__block">
-            <legend class="form__title">Расскажите о подборке</legend>
-            <p class="form__subtitle subtitle">Желательно сделать это кратко и ёмко</p>
-        </fieldset>
-
-        <div class="form__file file">
-            <input class="file__input visually-hidden" id="file-input" type="file" />
-            <div class="file__drop-zone">
-                <span class="file__cross">
-                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 0.5C3.8525 0.5 0.5 3.8525 0.5 8C0.5 12.1475 3.8525 15.5 8 15.5C12.1475 15.5 15.5 12.1475 15.5 8C15.5 3.8525 12.1475 0.5 8 0.5ZM11.75 10.6925L10.6925 11.75L8 9.0575L5.3075 11.75L4.25 10.6925L6.9425 8L4.25 5.3075L5.3075 4.25L8 6.9425L10.6925 4.25L11.75 5.3075L9.0575 8L11.75 10.6925Z" fill="rgba(0, 0, 0, 0.23)"/>
-                    </svg>    
-                </span>
-                <img class="file__img" src="./images/file.svg" alt="">
-                <div class="file__zone-description">
-                    <div class="file__drop-zone-subtitle subtitle">Перетащите файл или 
-                        <label class="file__label" for="file-input">загрузите с компьютера</label>
-                    </div>
-                    <div class="subtitle subtitle--small">
-                        Соотношение 1:1. Минимальный размер 1242х1242 px
-                    </div>
+    <section class="preview">
+        <div class="telephone">
+            <div class="telephone__status-bar">
+                <div class="row">
+                <div class="col-6">
+                    <span class="telephone__time">22:47</span>
                 </div>
-            </div>  
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                    <span class="telephone__wifi"></span>
+                    <span class="telephone__battery"></span>
+                </div>
+                </div>
+            </div>
+            <div class="telephone__image telephone__image--empty"></div>
+            <div class="telephone__post">
+                <h4 class="telephone__post-title">Название</h4>
+                <p class="telephone__post-description subtitle">Описание</p>
+            </div>
         </div>
+    </section>
 
-        <fieldset class="form__block form__block--devider">
-            <legend class="form__title">Выберите цвет</legend>
-            <p class="form__subtitle subtitle">Лучше всего подойдет цвет преобладающий на обложке</p>
+    <div class="container">
+        <form class="form" role="form">
+            <div class="title title--medium">Создайте подборку</div>
+    
+            <div class="form__subtitle subtitle">Перед началом ознакомьтесь с гайдлайнами, где вы найдете примеры правильного оформления</div>
+    
+            <fieldset class="form__block">
+                <legend class="form__title">Расскажите о подборке</legend>
+                <p class="form__subtitle subtitle">Желательно сделать это кратко и ёмко</p>
+            </fieldset>
+    
+            <div class="form__file file">
+                <input class="file__input visually-hidden" id="file-input" type="file" />
+                <div class="file__drop-zone">
+                    <span class="file__cross">
+                        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 0.5C3.8525 0.5 0.5 3.8525 0.5 8C0.5 12.1475 3.8525 15.5 8 15.5C12.1475 15.5 15.5 12.1475 15.5 8C15.5 3.8525 12.1475 0.5 8 0.5ZM11.75 10.6925L10.6925 11.75L8 9.0575L5.3075 11.75L4.25 10.6925L6.9425 8L4.25 5.3075L5.3075 4.25L8 6.9425L10.6925 4.25L11.75 5.3075L9.0575 8L11.75 10.6925Z" fill="rgba(0, 0, 0, 0.23)"/>
+                        </svg>    
+                    </span>
+                    <img class="file__img" src="./images/file.svg" alt="">
+                    <div class="file__zone-description">
+                        <div class="file__drop-zone-subtitle subtitle">Перетащите файл или 
+                            <label class="file__label" for="file-input">загрузите с компьютера</label>
+                        </div>
+                        <div class="subtitle subtitle--small">
+                            Соотношение 1:1. Минимальный размер 1242х1242 px
+                        </div>
+                    </div>
+                </div>  
+            </div>
+    
+            <fieldset class="form__block form__block--devider">
+                <legend class="form__title">Выберите цвет</legend>
+                <p class="form__subtitle subtitle">Лучше всего подойдет цвет преобладающий на обложке</p>
+                
+                <div class="form__color-picker color-picker">
+                    <input class="color-picker__input visually-hidden" id="color-picker" type="color" />
+                    <label class="color-picker__label" for="color-picker"></label>
+                </div>
+            </fieldset>
+    
+            <fieldset class="form__block form__block--devider">
+                <legend class="form__title">Проверьте читабельность</legend>
+                <p class="form__subtitle subtitle">Выберите цвет интерфейса, который будет контрастнее смотреться на выбранном ранее фоне</p>
+    
+                <div class="theme-switcher">
+                    <input class="theme-switcher__dark" type="radio" id="dark" name="theme" checked>
+                    <label class="subtitle subtitle--small theme-switcher__label-dark" for="dark">Темный</label>
+                    <input class="theme-switcher__light" type="radio" id="light" name="theme">
+                    <label class="subtitle subtitle--small theme-switcher__label-light" for="light">Светлый</label>
+                    <div class="theme-switcher__status"></div>
+                    <div class="theme-switcher__wrapper"></div>
+                </div>
+            </fieldset>
             
-            <div class="form__color-picker color-picker">
-                <input class="color-picker__input visually-hidden" id="color-picker" type="color" />
-                <label class="color-picker__label" for="color-picker"></label>
-            </div>
-        </fieldset>
-
-        <fieldset class="form__block form__block--devider">
-            <legend class="form__title">Проверьте читабельность</legend>
-            <p class="form__subtitle subtitle">Выберите цвет интерфейса, который будет контрастнее смотреться на выбранном ранее фоне</p>
-
-            <div class="theme-switcher">
-                <input class="theme-switcher__dark" type="radio" id="dark" name="theme" checked>
-                <label class="subtitle subtitle--small theme-switcher__label-dark" for="dark">Темный</label>
-                <input class="theme-switcher__light" type="radio" id="light" name="theme">
-                <label class="subtitle subtitle--small theme-switcher__label-light" for="light">Светлый</label>
-                <div class="theme-switcher__status"></div>
-                <div class="theme-switcher__wrapper"></div>
-            </div>
-        </fieldset>
-        
-    </form>
+        </form>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
