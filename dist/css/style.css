@@ -222,31 +222,36 @@ body {
   padding-top: 32px;
 }
 .form__input {
-  /* height: 56px; */
+  padding: 18px 20px;
+  box-sizing: border-box;
+}
+.form__input-error {
+  display: none;
+  color: red;
+  font-weight: 400;
+  font-size: 12px;
+}
+.form__input:invalid ~ .form__input-error {
+  display: inline-block;
 }
 .form__input-block {
   margin-top: 16px;
   position: relative;
 }
 .form__input--link {
-  padding-left: 32px;
+  padding-left: 40px;
+}
+.form__input-result, .form__icon {
+  position: absolute;
+  z-index: 1;
+  top: 19px;
+}
+.form__icon {
+  left: 12px;
 }
 .form__input-result {
-  width: 20px;
-  position: absolute;
-  z-index: 50;
-  right: 10px;
-  top: 12px;
-  -webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-.form__input-error {
-  color: red;
-  font-weight: 400;
-  font-size: 12px;
+  right: 12px;
+  user-select: none;
 }
 .form__input:invalid {
   border: 1px solid red;
@@ -262,12 +267,6 @@ body {
   font-weight: 600;
   margin-bottom: 5px;
   color: #000;
-}
-.form__icon {
-  position: absolute;
-  top: 6px;
-  left: 10px;
-  z-index: 0;
 }
 .file__input:focus + .file__drop-zone label {
   outline: 1px solid #0078d7;
