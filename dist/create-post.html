@@ -28,15 +28,17 @@
     <div class="creating-post-page">
       <div class="creating-post-page__scroll-box scroll-box">
         <div class="scroll-box__menu scroll-box__item">
-          <div class="scroll-box__container">Венуться к списку</div>
+          <div class="scroll-box__container d-flex align-items-center">
+            <a class="scroll-box__menu-link subtitle" href="#">Вернуться к списку</a>
+          </div>
         </div>
         <div class="scroll-box__header scroll-box__item">
           <div class="scroll-box__container">
-            <div class="title title--medium">Создайте подборку</div>
+            <h2 class="title title--medium">Создайте подборку</h2>
 
-            <div class="form__subtitle subtitle">
+            <div class="subtitle">
               Перед началом ознакомьтесь с
-              <a href="#" class="form__span">гайдлайнами</a> , где вы найдете
+              <a href="#" class="link link--primary">гайдлайнами</a> , где вы найдете
               примеры правильного оформления
             </div>
           </div>
@@ -98,7 +100,7 @@
                   <div class="file__zone-description">
                     <div class="file__drop-zone-subtitle subtitle">
                       Перетащите файл или
-                      <label class="file__label" for="file-input"
+                      <label class="file__label link link--primary" for="file-input"
                         >загрузите с компьютера</label
                       >
                     </div>
@@ -183,15 +185,12 @@
                 <p class="form__input-result">50</p>
               </fieldset>
 
-              <fieldset>
-                <button class="btn btn-primary" type="submit" disabled>
-                  Создать
-                </button>
-                <p class="btn-disable">
+                <input class="form__btn btn btn-primary" type="submit" value="Создать">
+                <p class="form__btn-subtitle subtitle subtitle--small">
                   Подборка не будет опубликована. Вы сможете добавить продукты и
                   внести правки
                 </p>
-              </fieldset>
+
             </form>
           </div>
         </div>
