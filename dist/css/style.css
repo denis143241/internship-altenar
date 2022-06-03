@@ -164,6 +164,7 @@ body {
   background-color: rgba(33, 150, 243, 0.24);
 }
 .title {
+  color: #000;
   font-size: 36px;
   font-weight: 400;
 }
@@ -187,6 +188,23 @@ body {
 .form {
   width: 100%;
 }
+.form button{
+  width: 458px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.btn-disable{
+  text-align: center;
+  margin-top: 10px;
+}
+.form__span{
+  color: #2196F3;
+  text-decoration: none;
+}
+.form__span:hover{
+  color: #2196F3;
+  text-decoration: underline;
+}
 .form__file,
 .form__color-picker {
   margin: 30px 0;
@@ -195,6 +213,27 @@ body {
   margin-bottom: 32px;
   padding-top: 32px;
 }
+.form__input{
+  width: 452px;
+  margin-left: 5px;
+}
+.form__input-item{
+  margin-top: 16px;
+  display: block;
+}
+.form__input-result{
+  width: 20px;
+  margin-top: -30px;
+  margin-left: 420px;
+  -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.form__input textarea{
+  resize: none;
+}
 .form__block--devider {
   border-top: 1px solid #E0E0E0;
 }
@@ -202,6 +241,7 @@ body {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 5px;
+  color: #000;
 }
 .file__input:focus + .file__drop-zone label {
   outline: 1px solid #0078d7;
@@ -379,7 +419,7 @@ body {
   height: 100%;
   width: 100%;
   max-width: 981px;
-  border-radius: 16px 0 0 16px;
+  border-radius: 16px;
   background: #212121;
   color: #000;
 }
@@ -483,8 +523,18 @@ body {
   display: flex;
   flex: 0 0 40%;
   flex-direction: column;
-  background: #000;
   overflow-y: auto;
+}
+.scroll-box::-webkit-scrollbar {
+  width: 4px;
+}
+.scroll-box::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.04);
+  /* костыль */
+}
+.scroll-box::-webkit-scrollbar-thumb {
+  background: #BDBDBD;
+  border-radius: 13px;
 }
 .scroll-box__item {
   display: flex;
@@ -495,17 +545,19 @@ body {
   width: 480px;
   height: 100%;
   overflow-x: hidden;
+  color: rgba(0, 0, 0, 0.54);
 }
 .scroll-box__menu {
+  padding-top: 20px;
   position: sticky;
   top: 0;
-  background: yellow;
+  background-color: rgba(0, 0, 0, 0.04);
   height: 68px;
   width: 100%;
 }
 .scroll-box__header {
-  background: #aeaeae;
-  height: 100px;
+  background-color: rgba(0, 0, 0, 0.04);
+  height: auto;
   padding: 30px 0;
 }
 .scroll-box__form {
