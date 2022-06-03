@@ -188,20 +188,24 @@ body {
 .form {
   width: 100%;
 }
-.form button{
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #0B79D0;
+}
+.form button {
   width: 458px;
   font-weight: 500;
   font-size: 15px;
 }
-.btn-disable{
+.btn-disable {
   text-align: center;
   margin-top: 10px;
 }
-.form__span{
+.form__span {
   color: #2196F3;
   text-decoration: none;
 }
-.form__span:hover{
+.form__span:hover {
   color: #2196F3;
   text-decoration: underline;
 }
@@ -213,25 +217,38 @@ body {
   margin-bottom: 32px;
   padding-top: 32px;
 }
-.form__input{
-  width: 452px;
-  margin-left: 5px;
+.form__input {
+  /* height: 56px; */
 }
-.form__input-item{
+.form__input-block {
   margin-top: 16px;
-  display: block;
+  position: relative;
 }
-.form__input-result{
+.form__input--link {
+  padding-left: 32px;
+}
+.form__input-result {
   width: 20px;
-  margin-top: -30px;
-  margin-left: 420px;
+  position: absolute;
+  z-index: 50;
+  right: 10px;
+  top: 12px;
   -webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
 }
-.form__input textarea{
+.form__input-error {
+  color: red;
+  font-weight: 400;
+  font-size: 12px;
+  /* position: absolute;    */
+}
+.form__input:invalid {
+  border: 1px solid red;
+}
+.form__input textarea {
   resize: none;
 }
 .form__block--devider {
@@ -242,6 +259,12 @@ body {
   font-weight: 600;
   margin-bottom: 5px;
   color: #000;
+}
+.form__icon {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  z-index: 0;
 }
 .file__input:focus + .file__drop-zone label {
   outline: 1px solid #0078d7;
