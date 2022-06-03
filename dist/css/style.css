@@ -241,7 +241,7 @@ body {
 .form__input--link {
   padding-left: 40px;
 }
-.form__input-result, .form__icon {
+.form__input-counter, .form__icon {
   position: absolute;
   z-index: 1;
   top: 19px;
@@ -249,7 +249,7 @@ body {
 .form__icon {
   left: 12px;
 }
-.form__input-result {
+.form__input-counter {
   right: 12px;
   user-select: none;
 }
