@@ -463,6 +463,7 @@ body {
   left: 0;
   width: 100%;
   padding: 10px 15px;
+  z-index: 1;
 }
 .telephone__wifi {
   width: 10.11px;
@@ -479,18 +480,33 @@ body {
   margin-right: 8px;
 }
 .telephone__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.telephone__image[src=""] {
+  display: none;
+}
+.telephone__image-block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-height: 362px;
   height: 57.187%;
-  background: url(../../images/big-onion.png) no-repeat center center; 
-  background-size: cover;
-}
-.telephone__image--empty {
   background: no-repeat center center;
   background-image: url(../../images/empty-image.svg);
 }
 .telephone__post {
-  padding-top: 35px;
-  flex-grow: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 55.76%;
+  width: 100%;
+  padding-top: 115px;
 }
 .telephone__post-title {
   font-size: 20px;
